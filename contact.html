@@ -3,17 +3,23 @@
 
     <head>
         <meta charset="UTF-8">
+
+        <!-- Allows the page to adjust to different screen sizes -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>Backroom | Contact</title>
+
+        <!-- Links the page to the main CSS stylesheet -->
         <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
-        <!-- Header -->
+
+        <!-- Header containing the website name and navigation -->
         <header>
             <h1>Backroom</h1>
 
-            <!-- Main Navigation -->
+            <!-- Main Navigation allows users to move between website pages -->
             <nav>
                 <a href="index.html">Home</a>
                 <a href="about.html">About Us</a>
@@ -23,8 +29,10 @@
             </nav>
         </header>
 
+
         <!-- Main Content -->
         <main>
+
             <!-- Contact Introduction -->
             <section>
                 <h2>Contact Backroom</h2>
@@ -35,8 +43,10 @@
                 </p>
             </section>
 
+
             <!-- Contact Information -->
-            <section>
+            <!-- Class allows the contact labels to be styled separately from other sections -->
+            <section class="contact-info">
                 <h2>Contact Information</h2>
 
                 <p>
@@ -60,7 +70,7 @@
                 </p>
             </section>
 
-            <!-- Find Us -->
+
             <!-- Location Map -->
             <section>
                 <h2>Our Location</h2>
@@ -70,6 +80,7 @@
                     Our location is near Musgrave Centre.
                 </p>
 
+                <!-- Embedded map helps users find the Backroom location -->
                 <iframe
                     class="map"
                     src="https://www.google.com/maps?q=Musgrave+Centre,+115+Musgrave+Road,+Berea,+Durban&output=embed"
@@ -78,12 +89,15 @@
                 </iframe>
             </section>
 
+
             <!-- General Contact Form -->
             <section>
                 <h2>Send Us a Message</h2>
 
+                <!-- Form allows visitors to send a general message -->
                 <form>
 
+                    <!-- Label identifies the name input field -->
                     <label for="name">
                         Full Name:
                     </label>
@@ -96,6 +110,7 @@
 
                     <br><br>
 
+                    <!-- Email input allows the visitor to provide their email address -->
                     <label for="email">
                         Email Address:
                     </label>
@@ -108,6 +123,7 @@
 
                     <br><br>
 
+                    <!-- Textarea is used because the visitor may need to enter a longer message -->
                     <label for="message">
                         Message:
                     </label>
@@ -123,6 +139,7 @@
 
                     <br><br>
 
+                    <!-- Submit button allows the visitor to send the message -->
                     <button type="submit">
                         Send Message
                     </button>
@@ -133,10 +150,16 @@
 
         </main>
 
-        <!-- Footer -->
+
+        <!-- Footer containing copyright information and a contact link -->
         <footer>
             <p>
                 &copy; 2026 Backroom. All rights reserved.
+            </p>
+
+            <!-- Provides another way to access the Contact page -->
+            <p>
+                <a href="contact.html">Contact Us</a>
             </p>
         </footer>
 

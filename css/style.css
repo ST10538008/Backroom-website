@@ -2,9 +2,16 @@
                     BACKROOM WEBSITE - MAIN STYLES
 ================================================================= */
 
+
+/* Universal selector applies box-sizing to all elements */
 * {
     box-sizing: border-box;
 }
+
+
+/* ==============================================================
+                                BODY
+================================================================= */
 
 body {
     margin: 0;
@@ -37,6 +44,7 @@ header h1 {
 ================================================================= */
 
 nav {
+    /* Flexbox places the navigation links in a row */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -48,6 +56,8 @@ nav a {
     text-decoration: none;
     padding: 10px 16px;
     border-radius: 5px;
+
+    /* Creates a smooth colour change when hovering over a link */
     transition: background-color 0.3s ease;
 }
 
@@ -61,6 +71,7 @@ nav a:hover {
 ================================================================= */
 
 main {
+    /* Limits the content width so it does not become too wide */
     max-width: 1100px;
     margin: 0 auto;
     padding: 40px 20px;
@@ -114,6 +125,8 @@ main a {
     padding: 10px 18px;
     border-radius: 5px;
     margin-top: 5px;
+
+    /* Makes the hover colour change smoother */
     transition: background-color 0.3s ease;
 }
 
@@ -127,6 +140,7 @@ main a:hover {
 ================================================================= */
 
 img {
+    /* Prevents images from becoming wider than their container */
     max-width: 100%;
     height: auto;
     display: block;
@@ -150,39 +164,15 @@ footer p {
     margin: 0;
 }
 
+/* Styles the Contact Us link in the footer */
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-/* ==============================================================
-                         MOBILE RESPONSIVENESS
-================================================================= */
-
-@media (max-width: 600px) {
-
-    header {
-        padding: 15px;
-    }
-
-    header h1 {
-        font-size: 1.7rem;
-    }
-
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav a {
-        width: 100%;
-        max-width: 250px;
-        text-align: center;
-    }
-
-    main {
-        padding: 20px 15px;
-    }
-
-    section {
-        padding: 20px;
-    }
+footer a:hover {
+    text-decoration: underline;
 }
 
 
@@ -191,6 +181,7 @@ footer p {
 ================================================================= */
 
 .rental-container {
+    /* Grid allows rental cards to be displayed in columns */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
@@ -201,6 +192,8 @@ footer p {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 3px 10px lightgray;
+
+    /* Creates a small movement effect when hovering */
     transition: transform 0.3s ease;
 }
 
@@ -264,6 +257,7 @@ footer p {
                          RENTALS - TABLET
 ================================================================= */
 
+/* Changes the rental layout to two columns on smaller screens */
 @media (max-width: 900px) {
 
     .rental-container {
@@ -276,13 +270,41 @@ footer p {
                          RENTALS - MOBILE
 ================================================================= */
 
+/* Changes the rental layout to one column on mobile screens */
 @media (max-width: 600px) {
 
     .rental-container {
         grid-template-columns: 1fr;
     }
 
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+    }
+
+    main {
+        padding: 20px 15px;
+    }
+
+    section {
+        padding: 20px;
+    }
 }
+
 
 /* ==============================================================
                               MAP
@@ -293,11 +315,79 @@ footer p {
     height: 350px;
     border: 0;
     border-radius: 8px;
+    margin-top: 10px;
 }
 
+
+/* Makes the map shorter on mobile screens */
 @media (max-width: 600px) {
 
     .map {
         height: 250px;
     }
+}
+
+
+/* ==============================================================
+                         ENQUIRY FORM
+================================================================= */
+
+form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: darkslategray;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+/* Highlights the form field currently being selected */
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: 2px solid royalblue;
+}
+
+form button {
+    background-color: royalblue;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: mediumblue;
+}
+
+
+/* ==============================================================
+                         CONTACT PAGE
+================================================================= */
+
+/* Aligns labels in the contact information section */
+.contact-info strong {
+    display: inline-block;
+    width: 130px;
 }
