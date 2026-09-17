@@ -123,11 +123,11 @@ Backroom/
 
     └── properties/
 
-HTML and CSS Concepts Demonstrated
+## HTML and CSS Concepts Demonstrated
 
 The project demonstrates fundamental web development concepts including:
 
-## HTML document structure.
+- HTML document structure.
 - Semantic HTML elements.
 - Headings and paragraphs.
 - Hyperlinks and navigation.
