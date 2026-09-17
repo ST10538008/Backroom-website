@@ -42,25 +42,111 @@ Home (index.html)
 ```
 
 ## Part 1 Details
-Part 1 covers project initiation and planning, including the Website Project Proposal, content research and sourcing, file/folder structure, and the initial HTML structure for all five pages linked through a working navigation menu.
+
+Part 1 covered project initiation and planning, including the Website Project Proposal, content research and sourcing, file/folder structure, and the initial HTML structure for all five pages linked through a working navigation menu.
+
+The HTML structure includes:
+
+- Semantic HTML elements such as `header`, `nav`, `main`, `section`, `article` and `footer`.
+- Headings and paragraphs to organise website content.
+- Images with alternative text.
+- Links between the different website pages.
+- Rental property information and facility lists.
+- Enquiry and contact forms.
+- An embedded location map on the Contact page.
+
+## Part 2 Details
+
+Part 2 focused on applying CSS styling and responsive design to the website.
+
+The following CSS improvements were implemented:
+
+- Added consistent colours and typography across the website.
+- Styled the header and navigation menu.
+- Styled headings and paragraphs.
+- Added consistent spacing using margins and padding.
+- Styled content sections with backgrounds, rounded corners and shadows.
+- Styled rental property cards.
+- Styled rental prices and rental information.
+- Styled enquiry buttons and navigation links.
+- Added hover effects to links, buttons and rental cards.
+- Styled enquiry and contact forms.
+- Styled form inputs, dropdown menus and text areas.
+- Added focus styling to form fields.
+- Added responsive images.
+- Added an embedded responsive location map.
+- Added CSS media queries for different screen sizes.
+- Rental listings display in three columns on larger screens.
+- Rental listings display in two columns on tablet screens.
+- Rental listings display in one column on mobile screens.
+- Navigation changes to a vertical layout on smaller screens.
+- Website spacing is adjusted for smaller screens.
+
+## Responsive Design
+
+The website was tested at different screen sizes to ensure that the layout remains usable across different devices.
+
+### Desktop
+
+The website displays the full navigation menu and rental listings in a three-column layout.
+
+### Tablet
+
+The rental listings change to a two-column layout to make better use of the available screen width.
+
+### Mobile
+
+The website changes to a mobile-friendly layout. Navigation links are displayed vertically and rental listings are displayed one per row.
 
 ## Project Structure
 
-```text
+text
 Backroom/
+
 ├── README.md
+
 ├── index.html
+
 ├── about.html
+
 ├── rentals.html
+
 ├── enquiry.html
+
 ├── contact.html
+
 ├── css/
+
 │   └── style.css
-├── js/
-│   └── script.js
+
 └── images/
-    └── property images
-```
+
+    └── properties/
+
+HTML and CSS Concepts Demonstrated
+
+The project demonstrates fundamental web development concepts including:
+
+## HTML document structure.
+- Semantic HTML elements.
+- Headings and paragraphs.
+- Hyperlinks and navigation.
+- Images and alternative text.
+- Ordered and unordered lists.
+- Forms and form controls.
+- Embedded content using an iframe.
+- CSS selectors.
+- CSS classes.
+- Colours and typography.
+- Margins and padding.
+- Borders and border radius.
+- Box shadows.
+- Flexbox.
+- CSS Grid.
+- Hover effects.
+- Form styling.
+- Media queries.
+- Responsive web design.
 
 ## How to Run the Website
 1. Open the Backroom project folder in Visual Studio Code.
